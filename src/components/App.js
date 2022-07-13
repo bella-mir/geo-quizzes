@@ -54,7 +54,7 @@ function App() {
         }
         setEmail(email);
         setIsLoggedIn(true);
-        navigate("/");
+        navigate("/games");
       })
       .catch((err) => {
         console.error(err);
@@ -66,7 +66,7 @@ function App() {
       .register(password, email)
       .then((data) => {
         setRegisterInfo(true);
-        navigate("/sign-in");
+        navigate("/login");
       })
       .catch((err) => {
         setRegisterInfo(false);
@@ -81,7 +81,7 @@ function App() {
     localStorage.removeItem("jwt");
     setEmail("");
     setIsLoggedIn(false);
-    navigate("/sign-in");
+    navigate("/");
   };
 
   const closeAllPopups = () => {

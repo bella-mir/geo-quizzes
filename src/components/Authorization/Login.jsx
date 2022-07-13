@@ -21,7 +21,7 @@ function Login(props) {
           name="email"
           type="email"
           placeholder="Email"
-          value={controlInput?.values?.email || null}
+          value={controlInput?.values?.email || ''}
           onChange={controlInput.handleChange}
         />
         <span className={styles.form__error} id="email-error"></span>
@@ -31,7 +31,7 @@ function Login(props) {
           name="password"
           type="password"
           placeholder="Password"
-          value={controlInput?.values?.password || null}
+          value={controlInput?.values?.password || ''}
           onChange={controlInput.handleChange}
         />
         <span className={styles.form__error} id="password-error"></span>
