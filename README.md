@@ -1,2 +1,33 @@
-# geo-quizzes
-set of geo-quizzes with authorisation and registration / JS / React
+# Project:  "Geo-quizzes with authorization and registration" 
+
+<img src="src/images/__logo_blue.svg" alt="Logo" width="80" height="auto">
+
+
+**Description**
+
+"Geo-quizzes" is an interactive page where users need to sign-up or sign in to play geographical quizzes and check their knowledge in geography of Russis. Registration, authorization and token check temproraly work with service `https://auth.nomoreparties.co`
+The project is not finised. Registration and authorization are implemented and there are linke to geo-quizzws as separate apps for now
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/belka-mironova/geo-quizzes.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the application in a development mode
+   ```sh
+   npm start
+   ```
+
+## Stack: 
+
+* JavaScript 
+* React.js
+
+
+
+

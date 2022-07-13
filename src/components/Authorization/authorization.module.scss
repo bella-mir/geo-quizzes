@@ -1,0 +1,240 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 50vh;
+}
+
+.form__register {
+  height: 400px;
+}
+
+@media (max-width: 620px) {
+  .form__register {
+    height: 360px;
+  }
+}
+
+.register__buttoncontainer{
+    margin-top: 216px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 620px) {
+    .register__buttoncontainer{
+        margin-top: 173px;
+        margin-bottom: 20px;
+    }
+  }
+
+
+  .register__signin {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    text-decoration: none;
+    color: #8FD9D1;
+  }
+  
+  .register__signin:hover{
+    opacity: 0.8;
+  }
+
+  .register__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 50px 0;
+    color:  #8FD9D1;
+  }
+  
+
+  .register{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 620px) {
+    .register{
+        margin-top: 40px;
+    }
+  }
+  
+  .form__input_white {
+    border: none;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #0f5c8c;
+    padding-bottom: 13px;
+  }
+  
+  .form__input_white:last-of-type{
+    margin-top: 30px;
+  }
+
+  .form__input_white:focus{
+    outline: none;
+    border-bottom: 2px solid rgba(204, 204, 204, 1);
+  }
+  
+
+  @media (max-width: 620px) {
+    .form__input_white {
+      width: 238px;
+    }
+  }
+
+  .form__submit {
+    width: 358px;
+    height: 50px;
+    background: #0f5c8c;
+    border-radius: 2px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: auto;
+    margin-bottom: 37px;
+    border: none;
+  }
+  
+  .form__submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 620px) {
+    .form__submit {
+      width: 238px;
+      height: 46px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .form__submit_white {
+    background-color: white;
+    color: black;
+    margin-bottom: 0;
+  }
+
+  .popup {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+  }
+
+  .popup_opened {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup__container {
+    position: absolute;
+    background-color: white;
+    width: 430px;
+    max-width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 620px) {
+    .popup__container {
+      width: 282px;
+      max-width: 100%;
+      height: 322px;
+      top: 123px;
+    }
+  }
+
+  .popup__title {
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 36px;
+    text-align: center;
+  }
+  
+  @media (max-width: 620px) {
+    .popup__title {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 25px 22px 75px 22px;
+    }
+  }
+
+  .popup__close {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -40px;
+    right: -40px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../images/close_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .popup__close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 620px) {
+    .popup__close {
+      top: -36px;
+      right: 0px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .popup__isCorrectImage{
+    width: 120px;
+    height: 120px;
+    margin: 60px 155px 32px;
+}
+
+@media (max-width: 620px) {
+    .popup__isCorrectImage{
+        margin: 50px 80px 40px;
+    }
+  }
+
+
+
+
+  
+  
