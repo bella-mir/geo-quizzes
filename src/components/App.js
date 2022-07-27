@@ -109,7 +109,7 @@ function App() {
         <Route
           path="*"
           element={
-            isLoggedIn ? <Navigate to="/games" /> : <Navigate to="/sign-in" />
+            isLoggedIn ? <Navigate to="/games" /> : <Navigate to="/" />
           }
         />
       </Routes>

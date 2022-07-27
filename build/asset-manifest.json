@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/geo-quizzes/static/css/main.d06978af.css",
+    "main.js": "/geo-quizzes/static/js/main.60397e15.js",
+    "static/js/787.677b07d3.chunk.js": "/geo-quizzes/static/js/787.677b07d3.chunk.js",
+    "static/media/geoghraphy2.jpg": "/geo-quizzes/static/media/geoghraphy2.d63e56bdc2a5eac9caf4.jpg",
+    "static/media/spb4.JPG": "/geo-quizzes/static/media/spb4.c7180f750d893a9f181e.JPG",
+    "static/media/ind4.jpeg": "/geo-quizzes/static/media/ind4.3e02fd7b7b17c2b2aceb.jpeg",
+    "static/media/dagestan.avif": "/geo-quizzes/static/media/dagestan.63ff06d62adfae101a87.avif",
+    "static/media/chukotka.avif": "/geo-quizzes/static/media/chukotka.dba17547a0e9d61cec5e.avif",
+    "static/media/bratsk.JPG": "/geo-quizzes/static/media/bratsk.86046b118b8e55f1ddd3.JPG",
+    "static/media/tymen.avif": "/geo-quizzes/static/media/tymen.0c7e1d9ce4abe40ce4a3.avif",
+    "static/media/__logo.svg": "/geo-quizzes/static/media/__logo.1019c35312e79a3fb75c.svg",
+    "index.html": "/geo-quizzes/index.html",
+    "static/media/decline.svg": "/geo-quizzes/static/media/decline.df8eddf661ff88f2d0efd3d570d14309.svg",
+    "static/media/ok.svg": "/geo-quizzes/static/media/ok.1b6082f862eac35e2514460237d96ecc.svg",
+    "static/media/close_icon.svg": "/geo-quizzes/static/media/close_icon.b6a18a132f001f2855dd.svg",
+    "main.d06978af.css.map": "/geo-quizzes/static/css/main.d06978af.css.map",
+    "main.60397e15.js.map": "/geo-quizzes/static/js/main.60397e15.js.map",
+    "787.677b07d3.chunk.js.map": "/geo-quizzes/static/js/787.677b07d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d06978af.css",
+    "static/js/main.60397e15.js"
+  ]
+}

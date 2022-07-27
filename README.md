@@ -2,11 +2,12 @@
 
 <img src="src/images/__logo_blue.svg" alt="Logo" width="80" height="auto">
 
+[Github Pages](https://belka-mironova.github.io/geo-quizzes/)
 
 **Description**
 
 "Geo-quizzes" is an interactive page where users need to sign-up or sign in to play geographical quizzes and check their knowledge in geography of Russis. Registration, authorization and token check temproraly work with service `https://auth.nomoreparties.co`
-The project is not finised. Registration and authorization are implemented and there are linke to geo-quizzws as separate apps for now
+The project is not finised. Registration and authorization are implemented and there are links to geo-quizzes as separate apps (only for now)
 
 ### Installation
 
