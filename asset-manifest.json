@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/geo-quizzes/static/css/main.d06978af.css",
-    "main.js": "/geo-quizzes/static/js/main.f727a2f8.js",
+    "main.js": "/geo-quizzes/static/js/main.60397e15.js",
     "static/js/787.677b07d3.chunk.js": "/geo-quizzes/static/js/787.677b07d3.chunk.js",
     "static/media/geoghraphy2.jpg": "/geo-quizzes/static/media/geoghraphy2.d63e56bdc2a5eac9caf4.jpg",
     "static/media/spb4.JPG": "/geo-quizzes/static/media/spb4.c7180f750d893a9f181e.JPG",
@@ -16,11 +16,11 @@
     "static/media/ok.svg": "/geo-quizzes/static/media/ok.1b6082f862eac35e2514460237d96ecc.svg",
     "static/media/close_icon.svg": "/geo-quizzes/static/media/close_icon.b6a18a132f001f2855dd.svg",
     "main.d06978af.css.map": "/geo-quizzes/static/css/main.d06978af.css.map",
-    "main.f727a2f8.js.map": "/geo-quizzes/static/js/main.f727a2f8.js.map",
+    "main.60397e15.js.map": "/geo-quizzes/static/js/main.60397e15.js.map",
     "787.677b07d3.chunk.js.map": "/geo-quizzes/static/js/787.677b07d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d06978af.css",
-    "static/js/main.f727a2f8.js"
+    "static/js/main.60397e15.js"
   ]
 }
