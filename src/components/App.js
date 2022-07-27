@@ -5,7 +5,7 @@ import Splash from "./Splash/Splash";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Menu from "./Menu/Menu";
-import About from "./About/About";
+import Profile from "./Profile/Profile";
 import InfoTooltip from "./Authorization/InfoTooltip";
 import ProtectedRoute from "./ProtectedRoute";
 import * as auth from "../utils/auth.js";
@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     if (isLoggedIn) {
-      navigate("/");
+      navigate("/games");
     }
   }, [isLoggedIn]);
 
@@ -105,7 +105,7 @@ function App() {
         />
         <Route path="/login" element={<Login handleLogin={handleLogin} />} />
         <Route path="/games" element={<ProtectedRoute isLoggedIn={isLoggedIn}> <Menu/> </ProtectedRoute>} />
-        <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile email={email} />} />
         <Route
           path="*"
           element={

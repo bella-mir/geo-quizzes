@@ -3,13 +3,14 @@
 }
 
 .footer {
-  margin: 67px 0 0 0;
+  margin: 30px auto 0 auto;
   min-height: 80px;
+  max-width: 1260px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border-top: solid 1px #CBCAC5;
+  // border-top: solid 1px #CBCAC5;
 }
 
 .footer__left {
@@ -24,7 +25,8 @@
 }
 
 .footer__menu:hover{
-  cursor: pointer
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .underlined{

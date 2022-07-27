@@ -44,7 +44,7 @@ function SignUp(props) {
       </form>
       <div>
         <Link to="/login" className={styles.register__signin}>
-          Already? Login
+          Already have an acoount? Login
         </Link>
       </div>
     </div>

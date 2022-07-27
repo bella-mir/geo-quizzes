@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./authorization.module.scss"
+import styles from "./authorization.module.scss";
 import { useForm } from "../../hooks/useForm";
+import { Link } from "react-router-dom";
 
 function Login(props) {
   const controlInput = useForm();
@@ -21,7 +22,7 @@ function Login(props) {
           name="email"
           type="email"
           placeholder="Email"
-          value={controlInput?.values?.email || ''}
+          value={controlInput?.values?.email || ""}
           onChange={controlInput.handleChange}
         />
         <span className={styles.form__error} id="email-error"></span>
@@ -31,7 +32,7 @@ function Login(props) {
           name="password"
           type="password"
           placeholder="Password"
-          value={controlInput?.values?.password || ''}
+          value={controlInput?.values?.password || ""}
           onChange={controlInput.handleChange}
         />
         <span className={styles.form__error} id="password-error"></span>
@@ -41,6 +42,11 @@ function Login(props) {
           </button>
         </div>
       </form>
+      <div>
+        <Link to="/sign-up" className={styles.register__signin}>
+          Don't have an account? Sign up
+        </Link>
+      </div>
     </div>
   );
 }

@@ -11,11 +11,15 @@ function Header(props) {
 
   return (
     <header className={styles.header}>
-      {!props.isloggedIn ? (<Link to="/">
-        <div className={styles.header__logo}></div>
-      </Link>):(<Link to="/games">
-        <div className={styles.header__logo}></div>
-      </Link>)}
+      {!props.isloggedIn ? (
+        <Link to="/">
+          <div className={styles.header__logo}></div>
+        </Link>
+      ) : (
+        <Link to="/games">
+          <div className={styles.header__logo}></div>
+        </Link>
+      )}
       <Routes>
         <Route
           exact
@@ -50,12 +54,17 @@ function Header(props) {
         <Route
           path="*"
           element={
-            <button
-              className={styles.header__link}
-              onClick={props.handleLogout}
-            >
-              Logout
-            </button>
+            <div>
+              <Link className={styles.header__profile} to="/profile">
+                {props.email}
+              </Link>
+              <button
+                className={styles.header__link}
+                onClick={props.handleLogout}
+              >
+                Logout
+              </button>
+            </div>
           }
         ></Route>
       </Routes>

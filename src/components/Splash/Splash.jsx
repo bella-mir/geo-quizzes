@@ -2,13 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./splash.module.scss"
 
+
+
 export default function Splash() {
   return (
     <div className={styles.splash}>
-      <h1 className={styles.title}>Hello, Russia</h1>
+      <div className={styles.rightColumn}>
+      <h1 className={styles.title}>GEO-Quizzes</h1>
       <p className={styles.subtitle}>
-        Geography Quizzes to learn more about Russia
+        Let's play and learn
       </p>
+      </div>
+      <div className={styles.leftColumn}>
+      
+      </div>
+
     </div>
   );
 }
