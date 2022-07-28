@@ -3,9 +3,9 @@ import styles from "./menu.module.scss";
 import peoples from "../../images/ind4.jpeg";
 import dagestan from "../../images/dagestan.avif";
 import tymen from "../../images/tymen.avif";
-import spb from "../../images/spb4.JPG";
+// import spb from "../../images/spb4.JPG";
 import chukotka from "../../images/chukotka.avif";
-import bratsk from "../../images/bratsk.JPG";
+// import bratsk from "../../images/bratsk.JPG";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
@@ -26,15 +26,15 @@ export default function Menu() {
           <div className={styles.grid__overlay}>
             <h2 className={styles.grid__title}>Indigenous peoples</h2>
             <div className={styles.links}>
-            <Link className={styles.link} to="/sign-up">
-              Learn
-            </Link>
-            <Link className={styles.link} to="/sign-up">
-              Play
-            </Link>
+              <Link className={styles.link} to="/map">
+                Learn
+              </Link>
+              <Link className={styles.link} to="/quiz">
+                Play
+              </Link>
             </div>
           </div>
-          </div>
+        </div>
         {/* </a> */}
 
         {/* <a
@@ -52,27 +52,28 @@ export default function Menu() {
           <div className={styles.grid__overlay}>
             <h2 className={styles.grid__title}>Regions</h2>
             <div className={styles.links}>
-            <Link className={styles.link} to="/sign-up">
-              Learn
-            </Link>
-            <Link className={styles.link} to="/sign-up">
-              Play
-            </Link>
+              <Link className={styles.link} to="/map">
+                Learn
+              </Link>
+              <Link className={styles.link} to="/quiz">
+                Play
+              </Link>
             </div>
-            
           </div>
-          </div>
-    
+        </div>
+
         {/* </a> */}
 
-        <a href="" className={styles.grid__content} target="_blank">
+        {/* <a href="" className={styles.grid__content} target="_blank"> */}
+        <div className={styles.grid__content}>
           <img src={tymen} alt="Тюмень" className={styles.grid__item} />
           {/* <!-- <div className={styles.grid__item} style="background-color: #EEB1D2;"></div> --> */}
           <div className={styles.grid__overlay}>
             <h2 className={styles.grid__title}>Cities</h2>
             <p className={styles.grid__subtitle}>Coming soon...</p>
           </div>
-        </a>
+        </div>
+        {/* </a> */}
 
         {/* <a href="#" className={styles.grid__content} target="_blank">
     <img
@@ -87,7 +88,8 @@ export default function Menu() {
     </div>
   </a> */}
 
-        <a href="#" className={styles.grid__content} target="_blank">
+        {/* <a href="#" className={styles.grid__content} target="_blank"> */}
+        <div className={styles.grid__content}>
           <img
             src={chukotka}
             alt="Вид из окна поезда"
@@ -98,7 +100,10 @@ export default function Menu() {
             <h2 className={styles.grid__title}>Geographical Darts</h2>
             <p className={styles.grid__subtitle}>Coming soon...</p>
           </div>
-        </a>
+        </div>
+
+        
+        {/* </a> */}
 
         {/* <a href="{{url_for('contact')}}" className={styles.grid__content} target="_blank">
     <img
