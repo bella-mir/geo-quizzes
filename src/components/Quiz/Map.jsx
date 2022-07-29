@@ -12,14 +12,39 @@ import "./Map.css";
 import "proj4leaflet";
 import "proj4";
 import InfoBox from "./InfoBox";
+import LearnMap from "./LearnMap";
+import QuizMap from "./QuizMap";
+import ResultMap from "./QuizMapResult";
 import * as myConstClass from "./constants.js";
 import world from "../../data/world.json";
 import russia from "../../data/russia.json";
 import lakes from "../../data/lakes.json";
+import { selectedNations } from "./quizConstants";
 
 const Map = () => {
+  const [nationsData, setNationsData] = useState(selectedNations);
   let [info, SetInfo] = useState(null);
   let [answer, SetAnswer] = useState(null);
+  const [quizMode, setQuizMode] = useState(false);
+  const [learnMode, setLearnMode] = useState(true);
+  const [resultsMode, setResultsMode] = useState(false);
+  const [rightAnswers, setRightAnswers] = useState([]);
+
+  const handleStartQuizClick = (option) => {
+    setQuizMode(option);
+  };
+
+  const handleLearnClick = (option) => {
+    setLearnMode(option);
+  };
+
+  const handleResults = (option) => {
+    setResultsMode(option);
+  };
+
+  const handleAnswers = (answer) => {
+    setRightAnswers((rightAnswers) => [...rightAnswers, answer]);
+  };
 
   //create function that shuffles array
   function shuffleArray(array) {
@@ -62,10 +87,26 @@ const Map = () => {
         <GeoJSON data={russia} style={myConstClass.basemapStyle} />
         <GeoJSON data={lakes} style={myConstClass.waterStyle} />
 
+        {quizMode ? (
+          <QuizMap handleSetAnswer={SetAnswer} nationsData={nationsData} handleAnswers={handleAnswers} />
+        ) : null}
+        {learnMode ? <LearnMap handleSetInfo={SetInfo} /> : null}
+        {resultsMode ? <ResultMap rightAnswers={rightAnswers} /> : null}
+
         <ScaleControl position="bottomleft" />
         <ZoomControl position="bottomleft" />
       </MapContainer>
-      <InfoBox />
+      <InfoBox
+        info={info}
+        answer={answer}
+        isQuiz={quizMode}
+        islearn={learnMode}
+        isResults={resultsMode}
+        handleStartQuizClick={handleStartQuizClick}
+        handleLearnClick={handleLearnClick}
+        handleResults={handleResults}
+        nationsData={nationsData}
+      />
     </div>
   );
 };

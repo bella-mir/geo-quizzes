@@ -3,9 +3,9 @@ import { useRef } from "react";
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 import * as myConstClass from "./constants.js";
-import nations from "../data/nations.json";
+import nations from "../../data/nations.json";
 
-export default function PeoplesMapInfo(props) {
+export default function LearnMap(props) {
   let selected = null;
 
   const HighlightFeature = (layer) => {

@@ -1,16 +1,16 @@
 export const basemapStyle = {
-  color: "#E3DFDA",
-  weight: 2,
+  color: "white",
+  weight: 1,
   opacity: 1,
-  fillColor: "#8a99a6",
+  fillColor: "#D4D4D9",
   fillOpacity: 1,
 };
 
 export const basemapStyle2 = {
   color: "white",
-  weight: 1.2,
+  weight: 1,
   Opacity: 1,
-  fillColor: "#E1EAF2",
+  fillColor: "#EDEDF2",
   fillOpacity: 1,
 };
 

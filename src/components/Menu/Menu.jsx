@@ -27,11 +27,9 @@ export default function Menu() {
             <h2 className={styles.grid__title}>Indigenous peoples</h2>
             <div className={styles.links}>
               <Link className={styles.link} to="/map">
-                Learn
+                Learn and play
               </Link>
-              <Link className={styles.link} to="/quiz">
-                Play
-              </Link>
+              
             </div>
           </div>
         </div>
@@ -53,10 +51,7 @@ export default function Menu() {
             <h2 className={styles.grid__title}>Regions</h2>
             <div className={styles.links}>
               <Link className={styles.link} to="/map">
-                Learn
-              </Link>
-              <Link className={styles.link} to="/quiz">
-                Play
+                Learn and play
               </Link>
             </div>
           </div>
