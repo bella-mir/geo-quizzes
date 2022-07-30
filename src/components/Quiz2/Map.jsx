@@ -21,7 +21,7 @@ import russia from "../../data/russia.json";
 import lakes from "../../data/lakes.json";
 import { selectedNations } from "./quizConstants";
 
-const Map = () => {
+const Map2 = () => {
   const [nationsData, setNationsData] = useState(selectedNations);
   let [info, SetInfo] = useState(null);
   let [answer, SetAnswer] = useState(null);
@@ -63,7 +63,7 @@ const Map = () => {
 
   useEffect(() => {
     if (quizMode === false) {
-      const newNations = shuffleArray(selectedNations).slice(0, 10);
+      const newNations = shuffleArray(selectedNations).slice(0, 20);
       setNationsData(newNations);
     };
     setRightAnswers([]);
@@ -131,4 +131,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default Map2;

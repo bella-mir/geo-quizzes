@@ -46,8 +46,7 @@ const InfoBox = (props) => {
     <div className="infobox">
       <div className="title">
         <h4 className="title">
-          Indigenous small-numbered peoples <br />
-          of the North, Siberia and the Far East
+  Russian regions
         </h4>
         <br />
       </div>
@@ -58,25 +57,18 @@ const InfoBox = (props) => {
             {props.info ? (
               <h4> {props.info.Nation}</h4>
             ) : (
-              "Information about peoples - choose an area"
+              "Information about regions - choose an area"
             )}
           </p>
           <div className="text">
             {props.info ? (
               <div>
-                <p>
-                  <h6>Population: </h6> {props.info.Population} people
+                <p className="textnation">
+                <h4> {props.info.UNIVERSAL}</h4>
                 </p>
                 <p>
-                  <h6>Language: </h6> {props.info.Language}{" "}
+                  <h6>Area: </h6> {props.info.AREA} square km
                 </p>
-                <p>
-                  <h6>Language group: </h6> {props.info.LangFamily}{" "}
-                </p>
-                <p>
-                  <h6>Regions of residence: </h6> {props.info.Oblast}{" "}
-                </p>
-                
               </div>
             ) : null}
           </div>
@@ -94,7 +86,7 @@ const InfoBox = (props) => {
 
       {props.isQuiz ? (
         <div className="quiz-box">
-          <h4 className="title__name">Where live ...</h4>
+          <h4 className="title__name">Where is ...</h4>
           <div className="question-section">
             <h1>{props.nationsData[currentQuestion]}?</h1>
             <span>
@@ -107,9 +99,9 @@ const InfoBox = (props) => {
       {props.isResults ? (
         <div className="title__container">
           <div className="button_container">
-            <h4> You know where live </h4>
+            <h4> You know where  </h4>
             <h2>
-              {score} put of {props.nationsData.length} peoples
+              {score} out of {props.nationsData.length} regions
             </h2>
             <div className="button_container button_container_learn ">
               <button

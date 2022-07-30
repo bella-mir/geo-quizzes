@@ -51,7 +51,7 @@ export default function Menu() {
           <div className={styles.grid__overlay}>
             <h2 className={styles.grid__title}>Regions</h2>
             <div className={styles.links}>
-              <Link className={styles.link} to="/map">
+              <Link className={styles.link} to="/map2">
                 Learn and play
               </Link>
             </div>

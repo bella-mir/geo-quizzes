@@ -1,20 +1,20 @@
 import React from "react";
 import { useRef } from "react";
 import { GeoJSON } from "react-leaflet";
-import nations from "../../data/nations.json";
+import regions from "../../data/rus_regions_2.json";
 
 export default function ResultMap(props) {
   const geoJsonRef = useRef();
 
   const onEachFeatureF = (feature, layer) => {
     layer
-        .bindTooltip(feature.properties.Nation, {
+        .bindTooltip(feature.properties.UNIVERSAL, {
           direction: "center",
           position: "auto",
         })
         .openTooltip();
       
-      if (props.rightAnswers.includes(layer.feature.properties.Nation)) {
+      if (props.rightAnswers.includes(layer.feature.properties.UNIVERSAL)) {
           layer.setStyle({
             fillColor: "#A4D6A5",
             color: "white",
@@ -23,7 +23,7 @@ export default function ResultMap(props) {
             fillOpacity: 0.6,
           });
         } 
-        else if (props.wrongAnswers.includes(layer.feature.properties.Nation)) {
+        else if (props.wrongAnswers.includes(layer.feature.properties.UNIVERSAL)) {
           layer.setStyle({
             fillColor: "#F27272",
             color: "white",
@@ -45,6 +45,6 @@ export default function ResultMap(props) {
     };
 
   return (
-    <GeoJSON data={nations} onEachFeature={onEachFeatureF} ref={geoJsonRef} />
+    <GeoJSON data={regions} onEachFeature={onEachFeatureF} ref={geoJsonRef} />
   );
 }

@@ -3,7 +3,7 @@ import { useRef } from "react";
 import L from "leaflet";
 import { GeoJSON } from "react-leaflet";
 import * as myConstClass from "./constants.js";
-import nations from "../../data/nations.json";
+import regions from "../../data/rus_regions_2.json";
 
 export default function QuizMap(props) {
   let selected = null;
@@ -35,14 +35,14 @@ export default function QuizMap(props) {
       var previous = selected;
     }
     console.log(props.nationsData[counter]);
-    if (layer.feature.properties.Nation === props.nationsData[counter]) {
+    if (layer.feature.properties.UNIVERSAL === props.nationsData[counter]) {
       layer.setStyle({
         weight: 3,
         color: "#A4D6A5",
         fillOpacity: 0.5,
         fillColor: "#A4D6A5",
       });
-      props.handleRightAnswers(layer.feature.properties.Nation);
+      props.handleRightAnswers(layer.feature.properties.UNIVERSAL);
     } else {
       layer.setStyle({
         weight: 1,
@@ -66,9 +66,9 @@ export default function QuizMap(props) {
         counter = counter + 1;
         console.log(counter);
         Select(e.target);
-        props.handleSetAnswer(e.target.feature.properties.Nation);
+        props.handleSetAnswer(e.target.feature.properties.UNIVERSAL);
         e.target
-          .bindTooltip(feature.properties.Nation, {
+          .bindTooltip(feature.properties.UNIVERSAL, {
             direction: "center",
             position: "auto",
           })
@@ -84,7 +84,7 @@ export default function QuizMap(props) {
   };
   return (
     <GeoJSON
-      data={nations}
+      data={regions}
       style={myConstClass.quizStyle}
       onEachFeature={onEachFeatureFQuiz}
       ref={geoJsonRefQuiz}

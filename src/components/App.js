@@ -6,8 +6,8 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Menu from "./Menu/Menu";
 import Profile from "./Profile/Profile";
-import Quiz from "./Quiz/Quiz";
 import Map from "./Quiz/Map";
+import Map2 from "./Quiz2/Map";
 import InfoTooltip from "./Authorization/InfoTooltip";
 import ProtectedRoute from "./ProtectedRoute";
 import * as auth from "../utils/auth.js";
@@ -108,8 +108,8 @@ function App() {
         <Route path="/login" element={<Login handleLogin={handleLogin} />} />
         <Route path="/games" element={<ProtectedRoute isLoggedIn={isLoggedIn}> <Menu/> </ProtectedRoute>} />
         <Route path="/profile" element={<Profile email={email} />} />
-        <Route path="/quiz" element={<Quiz />} />
         <Route path="/map" element={<Map />} />
+        <Route path="/map2" element={<Map2 />} />
         
         
         <Route
