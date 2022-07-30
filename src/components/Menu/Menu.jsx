@@ -6,6 +6,7 @@ import tymen from "../../images/tymen.avif";
 // import spb from "../../images/spb4.JPG";
 import chukotka from "../../images/chukotka.avif";
 // import bratsk from "../../images/bratsk.JPG";
+import kamchatka from "../../images/kam.jpeg";
 import { Link } from "react-router-dom";
 
 export default function Menu() {
