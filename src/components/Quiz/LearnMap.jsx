@@ -64,7 +64,7 @@ export default function LearnMap(props) {
       },
     });
     layer
-      .bindTooltip(feature.properties.Nation, {
+      .bindTooltip(feature.properties.NationEn, {
         permanent: true,
         direction: "center",
         position: "auto",

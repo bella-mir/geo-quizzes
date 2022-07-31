@@ -35,14 +35,14 @@ export default function QuizMap(props) {
       var previous = selected;
     }
     console.log(props.nationsData[counter]);
-    if (layer.feature.properties.Nation === props.nationsData[counter]) {
+    if (layer.feature.properties.NationEn === props.nationsData[counter]) {
       layer.setStyle({
         weight: 3,
         color: "#A4D6A5",
         fillOpacity: 0.5,
         fillColor: "#A4D6A5",
       });
-      props.handleRightAnswers(layer.feature.properties.Nation);
+      props.handleRightAnswers(layer.feature.properties.NationEn);
     } else {
       layer.setStyle({
         weight: 1,
@@ -66,9 +66,9 @@ export default function QuizMap(props) {
         counter = counter + 1;
         console.log(counter);
         Select(e.target);
-        props.handleSetAnswer(e.target.feature.properties.Nation);
+        props.handleSetAnswer(e.target.feature.properties.NationEn);
         e.target
-          .bindTooltip(feature.properties.Nation, {
+          .bindTooltip(feature.properties.NationEn, {
             direction: "center",
             position: "auto",
           })

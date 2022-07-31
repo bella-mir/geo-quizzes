@@ -56,7 +56,7 @@ const InfoBox = (props) => {
         <div>
           <p className="textnation">
             {props.info ? (
-              <h4> {props.info.Nation}</h4>
+              <h4> {props.info.NationEn}</h4>
             ) : (
               "Information about peoples - choose an area"
             )}
@@ -68,13 +68,13 @@ const InfoBox = (props) => {
                   <h6>Population: </h6> {props.info.Population} people
                 </p>
                 <p>
-                  <h6>Language: </h6> {props.info.Language}{" "}
+                  <h6>Language: </h6> {props.info.LanguageEn}{" "}
                 </p>
                 <p>
-                  <h6>Language group: </h6> {props.info.LangFamily}{" "}
+                  <h6>Language group: </h6> {props.info.LangFamilyEn}{" "}
                 </p>
                 <p>
-                  <h6>Regions of residence: </h6> {props.info.Oblast}{" "}
+                  <h6>Regions of residence: </h6> {props.info.OblastEn}{" "}
                 </p>
                 
               </div>

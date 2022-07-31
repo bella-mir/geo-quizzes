@@ -7,14 +7,16 @@ export default function ResultMap(props) {
   const geoJsonRef = useRef();
 
   const onEachFeatureF = (feature, layer) => {
+    console.log(props.rightAnswers)
+    console.log(props.wrongAnswers)
     layer
-        .bindTooltip(feature.properties.Nation, {
+        .bindTooltip(feature.properties.NationEn, {
           direction: "center",
           position: "auto",
         })
         .openTooltip();
       
-      if (props.rightAnswers.includes(layer.feature.properties.Nation)) {
+      if (props.rightAnswers.includes(layer.feature.properties.NationEn)) {
           layer.setStyle({
             fillColor: "#A4D6A5",
             color: "white",
@@ -23,7 +25,7 @@ export default function ResultMap(props) {
             fillOpacity: 0.6,
           });
         } 
-        else if (props.wrongAnswers.includes(layer.feature.properties.Nation)) {
+        else if (props.wrongAnswers.includes(layer.feature.properties.NationEn)) {
           layer.setStyle({
             fillColor: "#F27272",
             color: "white",
