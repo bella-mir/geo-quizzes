@@ -2,7 +2,7 @@
 
 <img src="src/images/__logo_blue.svg" alt="Logo" width="80" height="auto">
 
-[Github Pages](https://belka-mironova.github.io/geo-quizzes/)
+[Github Pages](https://bella-mir.github.io/geo-quizzes/)
 
 **Description**
 
@@ -13,7 +13,7 @@ The project is not finised. Registration and authorization are implemented and t
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/belka-mironova/geo-quizzes.git
+   git clone https://github.com/bella-mir/geo-quizzes.git
    ```
 2. Install NPM packages
    ```sh
